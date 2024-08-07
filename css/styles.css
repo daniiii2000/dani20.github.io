@@ -128,11 +128,13 @@ img {
   height: 125px;
   width: 125px;
 }
+
 @media (max-width: 767px) {
   #proktos {
     height: 45px;
     width: 45px;
-    position: initial; /* Tamaño máximo para móviles */
+    position: relative;
+    left: 20px; /* Tamaño máximo para móviles */
   }
 }
 
@@ -229,6 +231,13 @@ button.open-menu path[stroke*="#00856F"],
 #contact li path {
   stroke: var(--primary-color);
 }
+@media (max-width: 450px) {
+  .open-menu {
+    position: relative; /* mueve el botón 10px hacia abajo */
+    left: 80px; /* mueve el botón 20px hacia la derecha */
+  }
+  }
+
 
 body.menu-expanded #navigation .logo path,
 #navigation.scroll .logo path {
