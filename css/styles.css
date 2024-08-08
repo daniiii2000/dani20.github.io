@@ -231,13 +231,12 @@ button.open-menu path[stroke*="#00856F"],
 #contact li path {
   stroke: var(--primary-color);
 }
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .open-menu {
     position: relative; /* mueve el botón 10px hacia abajo */
     left: 80px; /* mueve el botón 20px hacia la derecha */
   }
-  }
-
+}
 
 body.menu-expanded #navigation .logo path,
 #navigation.scroll .logo path {
@@ -853,6 +852,7 @@ footer .social-links {
     margin-bottom: 20px;
     border-top: 60px;
     padding: 25px;
+    margin-top: 20px;
   }
   .ol {
     margin: 10px 40px;
@@ -901,5 +901,26 @@ footer .social-links {
 
   footer p {
     margin-bottom: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .ol {
+    padding: 10px 10px 5px;
+    gap: 5px;
+  }
+  #telemedicina {
+    padding: 10px 40px;
+  }
+  #h1telemedicina {
+    color: var(--primary-color);
+  }
+  #h2telemedicina {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .negrito {
+    font-weight: bold;
   }
 }
